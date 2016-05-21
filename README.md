@@ -4,7 +4,7 @@ When RemoteRebuildStrategy is used, full index rebuild job has to be completed o
 ## Main
 
 This repository contains Sitecore patch #110927. The patch implements a custom RemoteRebuildStrategy that subscribes to indexing:start:remote event. Default RemoteRebuildStrategy subscribes to indexing:end event which leaves room for indexes to be out of sync between instance that initiated full index rebuild and all other instances that depend on RemoteRebuildStrategy.
-This patch could be used with Sitecore.Support.97019 if `Core` database isn't shared between all Sitecore instances. This is a typical situation when `Sitecore Azure` module is used with multiple geo-distributed deployments.
+This patch could be used with [Sitecore.Support.97019](https://github.com/SitecoreSupport/Sitecore.Support.97019 "Sitecore.Support.97019 repo") if `Core` database isn't shared between all Sitecore instances. This is a typical situation when `Sitecore Azure` module is used with multiple geo-distributed deployments.
 
 ## Deployment
 
